@@ -2,40 +2,68 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Intro Cancas 2D</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultorio Psicológico Integral</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
+  <header class="bg-primary text-white text-center py-4">
+    <h1>Consultorio Psicológico Integral</h1>
+    <p class="lead">Tu bienestar emocional es nuestra prioridad</p>
+  </header>
 
-    <main class="container flex-column mt-3  shadow rounded-3 p-3">
-        <div class="d-flex justify-content-center flex-row mb-3">
-            <h1>Objetos 2D mediante OOP</h1>
+  <main class="container mt-4">
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Bienvenido</h2>
+      <p class="text-center">
+        Ofrecemos atención psicológica profesional en un ambiente cálido, confidencial y respetuoso.
+        Nuestro enfoque es integral, considerando a cada persona como única.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Nuestros Servicios</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Terapia individual para adolescentes y adultos</li>
+        <li class="list-group-item">Terapia de pareja</li>
+        <li class="list-group-item">Orientación familiar</li>
+        <li class="list-group-item">Manejo de ansiedad, depresión y estrés</li>
+      </ul>
+    </section>
+
+    <section class="mb-5 text-center">
+      <h2 class="mb-4">Visualización de Bienestar</h2>
+      <div class="d-flex justify-content-around flex-wrap">
+        <div>
+          <h6>Círculo de equilibrio</h6>
+          <canvas class="border shadow" id="canvasOOP"></canvas>
         </div>
-        <div class="d-flex flex-row shadow-sm mb-1 p-3 justify-content-around">
-            <div class="d-flex justify-content-center flex-column mb-3">
-                <h5 class="d-flex justify-content-center">Objeto 2D</h5>
-                <canvas class="border shadow" id="canvasOOP"></canvas>
-            </div>
-            <div class="d-flex justify-content-center flex-column mb-3">
-                <h5 class="d-flex justify-content-center">Objeto con Random</h5>
-                <canvas class="border shadow" id="canvasRandom"></canvas>
-            </div>  
-            <div class="d-flex justify-content-center flex-column mb-3">
-                <h5 class="d-flex justify-content-center">Múltiples objetos</h5>
-                <canvas class="border shadow" id="canvasMultiple"></canvas>
-            </div>
+        <div>
+          <h6>Estado emocional cambiante</h6>
+          <canvas class="border shadow" id="canvasRandom"></canvas>
         </div>
+        <div>
+          <h6>Diversidad emocional</h6>
+          <canvas class="border shadow" id="canvasMultiple"></canvas>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <section class="mb-5 text-center">
+      <h2 class="mb-3">Contacto</h2>
+      <p>Agenda tu cita: <strong>consultorio@psicologia.com</strong></p>
+      <p>Teléfono: <strong>+52 771 123 4567</strong></p>
+    </section>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+  <footer class="bg-light text-center py-3">
+    <p class="mb-0">© 2025 Consultorio Psicológico Integral</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
